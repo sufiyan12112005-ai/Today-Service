@@ -117,7 +117,7 @@ function validate_(d){
   if(String(d.name||'').trim().length<2 || String(d.name).length>85)throw new Error('Name required');
   if(!/^[6-9]\d{9}$/.test(cleanPhone_(d.phone)))throw new Error('Invalid mobile number');
   if(!/^[1-9]\d{5}$/.test(String(d.pin||'')))throw new Error('Invalid PIN');
-  if(['Front Load','Top Load','Semi-Automatic'].indexOf(String(d.machineType||''))<0)throw new Error('Invalid machine');
+  if(['Front Load','Top Load'].indexOf(String(d.machineType||''))<0)throw new Error('Invalid machine');
   if(['LG','Samsung','IFB','Whirlpool','Bosch','Haier','Godrej','Other'].indexOf(String(d.brand||''))<0)throw new Error('Invalid brand');
   if(d.brand==='Other' && (!String(d.otherBrand||'').trim() || String(d.otherBrand).length>70))throw new Error('Other brand name required');
   ['sourcePage','area','issue','notes','utmSource','utmMedium','utmCampaign','gclid','gbraid','wbraid'].forEach(function(k){

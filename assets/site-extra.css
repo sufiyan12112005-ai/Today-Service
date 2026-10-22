@@ -1,0 +1,69 @@
+
+/* Shared UI for transparency and service-detail pages. Designed to match the existing site. */
+[hidden]{display:none!important}
+.page-hero{position:relative;background:radial-gradient(circle at 86% 12%,#f0dfff 0,transparent 32%),linear-gradient(125deg,#fff,#faf4ff 60%,#f4ecff);padding:66px 0 55px;border-bottom:1px solid #eee3fa}
+.page-hero .container{position:relative;z-index:1}
+.page-hero .eyebrow{margin-bottom:16px}
+.page-hero h1{font-size:clamp(2.1rem,4vw,3.45rem);max-width:850px;line-height:1.2}
+.page-hero h1 em{font-style:normal;background:linear-gradient(120deg,#7025bb,#d521aa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.page-hero p{color:#56536e;font-size:16px;line-height:1.85;max-width:760px;margin-top:17px}
+.page-hero .hero-actions{margin-top:24px}
+.page-breadcrumbs{color:#6f6087;font-size:12px;margin-bottom:19px}
+.page-breadcrumbs a{color:#5c28a7;text-decoration:underline;text-underline-offset:3px}
+.page-body{padding:54px 0 80px}
+.page-body .section-head{margin-bottom:27px}
+.prose-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,310px);gap:28px;align-items:start}
+.content-panel{border:1px solid #e9e1f2;background:#fff;border-radius:18px;padding:30px;box-shadow:0 8px 24px rgba(22,12,61,.04)}
+.content-panel h2{font-size:clamp(1.3rem,2vw,1.7rem);margin:3px 0 13px}
+.content-panel h3{font-size:1.04rem;margin:24px 0 8px}
+.content-panel p{color:#56536b;margin:0 0 15px;line-height:1.85;max-width:85ch}
+.content-panel ul,.content-panel ol{margin:0 0 19px;padding-left:22px;color:#56536b;line-height:1.95}
+.content-panel li{margin:4px 0}
+.content-panel a:not(.btn){color:#6731ac;text-decoration:underline;text-underline-offset:3px}
+.content-panel section{scroll-margin-top:110px}
+.content-panel section+section{margin-top:32px;padding-top:29px;border-top:1px solid #e9e1f2}
+.side-card{border:1px solid #e5d6f3;background:linear-gradient(160deg,#fff,#f9f3ff);border-radius:17px;padding:24px;position:sticky;top:102px}
+.side-card h2{font-size:1.2rem;margin:0 0 10px}
+.side-card p{font-size:13px;line-height:1.75;color:#58526b;margin:0 0 14px}
+.side-card a.contact-link{display:block;font-size:13px;font-weight:800;color:#5e2da0;margin:11px 0;overflow-wrap:anywhere}
+.side-card .btn{width:100%;margin-top:10px}
+.detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:24px 0}
+.detail-card{padding:21px 21px 20px;background:#fff;border-radius:16px;border:1px solid #e9e2f2;box-shadow:0 9px 22px rgba(38,16,94,.04)}
+.detail-card .icon-bubble{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;color:#7b24bf;background:#f2e5ff;font-size:19px;margin-bottom:14px}
+.detail-card h3{font-size:1.02rem;margin-bottom:8px}
+.detail-card p{font-size:13px;line-height:1.72;color:#6c6479;margin:0}
+.info-ribbon{border:1px solid #e2d5f4;background:linear-gradient(100deg,#fdfbff,#f6edff);padding:17px 20px;border-radius:13px;display:flex;align-items:flex-start;gap:12px;margin:24px 0;color:#473a64;font-size:13px;line-height:1.75}
+.info-ribbon strong{color:#4d2090}
+.trust-note{background:#f7f1ff;border:1px solid #e0d1ef;color:#4a3569;border-radius:11px;padding:13px 15px;font-size:12.5px;line-height:1.7;margin:18px 0}
+.info-bullets{display:grid;gap:13px;margin:22px 0}
+.info-bullets .point{border-left:3px solid #a53ad0;background:#fcf9ff;padding:13px 16px;border-radius:0 9px 9px 0;font-size:13.5px;color:#564c68;line-height:1.7}
+.info-bullets .point strong{display:block;color:#30135e;font-size:14px}
+.service-nav{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}
+.service-nav a{display:inline-flex;padding:9px 13px;border:1px solid #ddc8ed;border-radius:99px;background:#fff;color:#51218a;font-size:12px;font-weight:700}
+.contact-rows{display:grid;gap:12px;margin:20px 0}
+.contact-row{display:flex;gap:13px;align-items:flex-start;border:1px solid #e9e3f4;background:#fbf9ff;border-radius:12px;padding:17px}
+.contact-row .cr-icon{background:#ede0ff;color:#6928a8;padding:8px;line-height:1;border-radius:9px}
+.contact-row strong{color:#221343;display:block}
+.contact-row a{overflow-wrap:anywhere}
+.comparison-notes{font-size:13px;color:#6e677c;line-height:1.75}
+.mobile-sheet{display:none}
+@media(max-width:900px){.prose-layout{grid-template-columns:1fr}.side-card{position:relative;top:auto}.detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.page-body{padding:43px 0 63px}}
+@media(max-width:600px){.page-hero{padding:33px 0 41px}.page-hero p{font-size:14px}.page-body{padding:30px 0 54px}.content-panel{padding:21px 17px}.detail-grid{grid-template-columns:1fr;gap:11px}.detail-card{padding:19px}.page-hero h1{font-size:2.16rem}.page-hero .hero-actions .btn{width:100%}.info-ribbon{font-size:12px;padding:13px}.side-card{padding:20px}}
+/* Correction messaging and visibly independent-service disclosure */
+.inline-disclosure{border:1px solid #e4d7f4;background:#faf6ff;border-radius:11px;color:#513c69;padding:11px 13px;font-size:12px;line-height:1.65;margin:13px 0}
+.about-strip{background:#1f104d;color:#f7f2ff;padding:24px 0}
+.about-strip .container{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.about-strip strong{display:block;font-size:17px;color:white;font-weight:800}
+.about-strip span{display:block;font-size:12.5px;color:#e0d4ec;line-height:1.7;margin-top:4px}
+.about-strip .btn{flex-shrink:0}
+@media(max-width:680px){.about-strip .container{display:block}.about-strip .btn{margin-top:17px}}
+/* Fast confirmation modal: always distinguish a submitted request from an appointment. */
+.thankyou-modal .thankyou-ref{font-weight:700}
+.thankyou-modal .thankyou-sub{display:block;margin:0 auto 13px;color:#635b73;font-size:13px;line-height:1.65;max-width:40ch}
+.thankyou-modal .thankyou-badge.is-confirmed{background:#e3f8ec;color:#14623d}
+.thankyou-modal .thankyou-badge.is-error{background:#fff1e8;color:#9b3a23}
+.thankyou-modal .thankyou-ref[hidden]{display:none!important}
+
+.footer-grid.four-cols{grid-template-columns:1.25fr .8fr 1fr 1fr}
+@media(max-width:1100px){.footer-grid.four-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.footer-grid.four-cols{grid-template-columns:1fr}}
